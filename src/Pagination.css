@@ -6,5 +6,18 @@ img{
     background-color: beige;
     display: inline-flex;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 3%;
+}
+
+.pageButtons >span{
+    padding: 10px 15px;
+    border: 1px solid rgb(18, 174, 209);
+}
+.pageButtons{
+    margin:15% 20px 20px 20px;
+    padding: 10px 15px;
+
+}
+.currentPage{
+    background-color: aquamarine;
 }

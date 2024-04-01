@@ -3,13 +3,16 @@ import "./App.css";
 import Pagination from "./Pagination";
 
 function App() {
-  const [products, setProducts] = useState();
+  const [products, setProducts] = useState([]);
+  const [pages, setPages] = useState(1);
+  const [selectedPage, setSelectedPage] = useState(0);
+
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await fetch("https://dummyjson.com/products");
+        const res = await fetch("https://dummyjson.com/products/?limit=100");
         const data = await res.json();
-        setProducts(data);
+        setProducts(data.products);
       } catch (e) {
         console.log(e);
       }
@@ -18,9 +21,12 @@ function App() {
     getProducts();
   }, []);
 
+  const pageHandler = (i) => {
+    setPages(i);
+  };
   return (
     <div className="App">
-      <Pagination data={products} />
+      <Pagination data={products} curPage={pages} setPage={pageHandler} />
     </div>
   );
 }
