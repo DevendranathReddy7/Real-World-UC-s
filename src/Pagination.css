@@ -1,5 +1,7 @@
 img{
-    height:80px
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
 }
 
 .products{
@@ -9,12 +11,12 @@ img{
     margin: 10px 3%;
 }
 
-.pageButtons >span{
+.pageButtons > span{
     padding: 10px 15px;
     border: 1px solid rgb(18, 174, 209);
 }
 .pageButtons{
-    margin:15% 20px 20px 20px;
+    margin:20px ;
     padding: 10px 15px;
 
 }
