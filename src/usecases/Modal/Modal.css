@@ -1,7 +1,7 @@
 .modal__container{
     background-color: rgb(192, 162, 220);
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     left: 23%;
     top: 10%;
     width: 50%;
@@ -20,3 +20,4 @@ p{
     font-size: 140px;
     margin-top: -9%;
 }
+

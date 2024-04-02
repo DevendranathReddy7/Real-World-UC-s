@@ -10,7 +10,10 @@ function App() {
   };
   return (
     <div className="App">
-      <button onClick={() => setIsOpen(!isOpen)}>
+      <button
+        style={{ zIndex: isOpen ? 1 : -1 }}
+        onClick={() => setIsOpen(!isOpen)}
+      >
         {isOpen ? "Close Modal" : "Show Modal"}
       </button>
       {isOpen && <Modal isOpen={isOpen} closeModal={closeHandler} />}
