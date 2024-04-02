@@ -14,6 +14,7 @@ img{
 .pageButtons > span{
     padding: 10px 15px;
     border: 1px solid rgb(18, 174, 209);
+    cursor: pointer;
 }
 .pageButtons{
     margin:20px ;

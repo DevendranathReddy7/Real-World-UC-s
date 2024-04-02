@@ -5,7 +5,6 @@ import Pagination from "./Pagination";
 function App() {
   const [products, setProducts] = useState([]);
   const [pages, setPages] = useState(1);
-  const [selectedPage, setSelectedPage] = useState(0);
 
   useEffect(() => {
     const getProducts = async () => {
@@ -24,6 +23,7 @@ function App() {
   const pageHandler = (i) => {
     setPages(i);
   };
+
   return (
     <div className="App">
       <Pagination data={products} curPage={pages} setPage={pageHandler} />
