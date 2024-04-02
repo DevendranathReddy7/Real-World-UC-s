@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Pagination from "./Pagination";
+import Pagination from "../src/usecases/Pagination/Pagination";
 
 function App() {
   const [products, setProducts] = useState([]);
