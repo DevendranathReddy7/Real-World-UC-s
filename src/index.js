@@ -4,12 +4,14 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import PaginationIndex from "./PaginationIndex";
 import ModalIndex from "./ModalIndex";
+import ProgressionIndex from "./ProgressionIndex";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <PaginationIndex /> */}
-    <ModalIndex />
+    {/* <ModalIndex /> */}
+    <ProgressionIndex />
   </React.StrictMode>
 );
 
