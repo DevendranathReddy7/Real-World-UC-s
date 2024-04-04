@@ -5,13 +5,15 @@ import reportWebVitals from "./reportWebVitals";
 import PaginationIndex from "./PaginationIndex";
 import ModalIndex from "./ModalIndex";
 import ProgressionIndex from "./ProgressionIndex";
+import CurrencyConverterIndex from "./CurrencyConverterIndex";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <PaginationIndex /> */}
     {/* <ModalIndex /> */}
-    <ProgressionIndex />
+    {/* <ProgressionIndex /> */}
+    <CurrencyConverterIndex />
   </React.StrictMode>
 );
 
