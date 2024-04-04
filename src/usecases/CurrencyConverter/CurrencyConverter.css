@@ -1,0 +1,45 @@
+.wrapper{
+    background-color: rgb(52, 52, 52);
+    margin: 10% 20% 1% 20%;
+    padding: 2% 2% 10% 2%;
+    border-radius: 3px;
+    box-shadow: black;
+}
+.heading{
+    color: white;
+}
+.dropdown__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.swap{
+    height: 30px;
+    font-size: 30px;
+}
+.dropdown{
+    height: 40px;
+    width: 15rem;
+    border-radius: 3px;
+    border-style: none;
+}
+
+.input{
+    height: 40px;
+    width: 100%;
+    border-radius: 3px;
+    border-style: none;
+}
+
+.convert{
+    border-style: none;
+    float: right;  
+    background-color: rgb(24, 182, 235);
+    height: 40px;
+    width: 100px;
+    margin-top: 1%;
+    border-radius: 3px;
+    color: white;
+    font-size: large;
+
+}
