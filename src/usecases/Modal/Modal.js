@@ -5,7 +5,7 @@ const Modal = ({ isOpen, closeModal }) => {
     isOpen && (
       <div className="modal__container">
         <button onClick={closeModal}>&times;</button>
-        <p>I am Modal</p>
+        <p className="modalPara">I am Modal</p>
         <div onClick={closeModal}> </div>
       </div>
     )
