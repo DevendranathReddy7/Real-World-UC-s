@@ -12,6 +12,7 @@ const CurrencyConverter = (props) => {
   const [amount, setAmount] = useState(0);
   const [amountError, setAmountError] = useState(null);
   const [currencyError, setCurrencyError] = useState(null);
+  const [favCurrency, setfavCurrency] = useState([]);
 
   useEffect(() => {
     const getCurrencies = async () => {
@@ -65,6 +66,24 @@ const CurrencyConverter = (props) => {
     }
   };
 
+  const favButtonHandler = (curType) => {
+    switch (curType) {
+      case "from":
+        setfavCurrency((prev) =>
+          Array.from(new Set([...prev, selectedCurrencies.from]))
+        );
+        break;
+      case "to":
+        setfavCurrency((prev) =>
+          Array.from(new Set([...prev, selectedCurrencies.to]))
+        );
+        break;
+      default:
+        break;
+    }
+  };
+
+  console.log(favCurrency);
   return (
     <div className="wrapper">
       <h3 className="heading">Currency Converter</h3>
@@ -76,6 +95,8 @@ const CurrencyConverter = (props) => {
             curType="from"
             selectedCur={currencyHandler}
             defaultCurrency={selectedCurrencies.from}
+            favHandler={favButtonHandler}
+            favCurrencies={favCurrency}
           />
         </div>
         <div onClick={swapHandler}>
@@ -88,6 +109,8 @@ const CurrencyConverter = (props) => {
             curType="to"
             selectedCur={currencyHandler}
             defaultCurrency={selectedCurrencies.to}
+            favHandler={favButtonHandler}
+            favCurrencies={favCurrency}
           />
         </div>
       </div>

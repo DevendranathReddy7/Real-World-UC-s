@@ -108,3 +108,24 @@
     color: red;
     margin-top: 3px;
 }
+
+.favButton{
+    background-color: transparent;
+    border-style: none;
+    top: -2rem;
+    position: relative;
+    bottom: 0px;
+    right: 0;
+    left: 12rem;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.fav__option{
+    background-color: rgb(216, 249, 131);
+}
+.option{
+    background-color: rgb(250, 180, 180);
+}
