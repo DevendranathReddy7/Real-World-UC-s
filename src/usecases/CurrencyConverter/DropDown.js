@@ -19,7 +19,7 @@ const DropDown = ({
         onChange={dropdownHandler}
         value={defaultCurrency}
       >
-        {favCurrencies.map((cur) => {
+        {favCurrencies?.map((cur) => {
           return (
             <option key={cur} className="fav__option">
               {cur}

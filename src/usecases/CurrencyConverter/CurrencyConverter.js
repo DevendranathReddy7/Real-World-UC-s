@@ -34,11 +34,11 @@ const CurrencyConverter = (props) => {
       { method: "GET" }
     );
     const data = await res.json();
-    console.log(data.rates);
     setSelectedCurrencies((prev) => ({ ...prev, convertedValue: data.rates }));
   };
 
   const amountHandler = (e) => {
+    setSelectedCurrencies((prev) => ({ ...prev, convertedValue: "" }));
     const amountValue = e.target.value;
     if (isNaN(amountValue)) return setAmountError(true);
     setAmount(parseInt(amountValue));
@@ -56,6 +56,7 @@ const CurrencyConverter = (props) => {
 
   const currencyHandler = (curency, type) => {
     setCurrencyError(false);
+    setSelectedCurrencies((prev) => ({ ...prev, convertedValue: "" }));
     switch (type) {
       case "from":
         setSelectedCurrencies((prev) => ({ ...prev, from: curency }));
@@ -83,7 +84,6 @@ const CurrencyConverter = (props) => {
     }
   };
 
-  console.log(favCurrency);
   return (
     <div className="wrapper">
       <h3 className="heading">Currency Converter</h3>
