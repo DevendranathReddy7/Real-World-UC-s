@@ -2,10 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import PaginationIndex from "./PaginationIndex";
-import ModalIndex from "./ModalIndex";
-import ProgressionIndex from "./ProgressionIndex";
-import CurrencyConverterIndex from "./CurrencyConverterIndex";
+
+import {
+  PaginationIndex,
+  ModalIndex,
+  ProgressionIndex,
+  CurrencyConverterIndex,
+  PasswordGeneratorIndex,
+} from "./rootIndexs/rootIndex";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,7 +17,8 @@ root.render(
     {/* <PaginationIndex /> */}
     {/* <ModalIndex /> */}
     {/* <ProgressionIndex /> */}
-    <CurrencyConverterIndex />
+    {/* <CurrencyConverterIndex /> */}
+    <PasswordGeneratorIndex />
   </React.StrictMode>
 );
 

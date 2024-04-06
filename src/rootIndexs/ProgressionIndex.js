@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProgressionBar from "./usecases/ProgressionBar/ProgressionBar";
+import ProgressionBar from "../usecases/ProgressionBar/ProgressionBar";
 
 const counterValues = [
   {

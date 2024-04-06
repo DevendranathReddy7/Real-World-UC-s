@@ -1,5 +1,5 @@
 import React from "react";
-import CurrencyConverter from "./usecases/CurrencyConverter/CurrencyConverter";
+import CurrencyConverter from "../usecases/CurrencyConverter/CurrencyConverter";
 
 const CurrencyConverterIndex = () => {
   return (
